@@ -9,6 +9,7 @@
     onMount(() => {
         const queryParams = new URLSearchParams(window.location.search);
         const filterParam = queryParams.get("filter");
+        console.log(selectedCategoryId)
         if (filterParam) {
             // De filterqueryparameter bevat de geselecteerde categorie-ID
             selectedCategoryId = filterParam;
@@ -101,9 +102,7 @@
           </ul>
         </section>
       </section>
-    
-    
-    
+      
       <main class="tekenmethodes-main">
         <article class="methods">
           {#if data && data.methods && data.methods.length > 0}
