@@ -7,28 +7,18 @@
       <input type="checkbox" />
       <span class="menu"> <span class="hamburger" /> </span>
 
-      <nav class="nav-menu">
-        <ul class="ul-1">
+      <nav>
+        <ul>
           <a href="/tekenmethodes"><li>Tekenmethodes</li></a>
           <a href="/kennisclips"><li>Kennisclips</li></a>
-        </ul>
-        <a href="/">
-          <img
-            src="assets\vtHBO-v1.0-Logo_1.svg"
-            class="visual-thinking-logo"
-            alt="visual-thinking-logo">
-        </a>
-
-        <ul class="ul-2">
+          <a href="/"><li><img src="assets\vtHBO-v1.0-Logo_1.svg" class="visual-thinking-logo"
+            alt="visual-thinking-logo"></li></a>
           <a href="/over"><li>Over</li></a>
           <a href="/artikelen"><li>Artikelen</li></a>
+
         </ul>
-        <section class="yellow-wrapped">
-          <section class="yellow" />
-          <section class="yellow2" />
-          <section class="yellow3" />
-          <section class="yellow4" />
-        </section>
+        <!-- <img src="assets/Group 1.svg" alt="yellowIcons" class="yellowIcons"> -->
+
       </nav>
     </label>
   </body>
@@ -51,17 +41,17 @@
     text-decoration: none;
   }
 
-  .nav-menu {
+  nav {
     padding: 2em;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    margin-left: -7em;
+    display: flex;
     align-items: center;
-    gap: 10px;
-    justify-items: center;
+    justify-content: space-around;
   }
 
   img {
-    margin-left: -1em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   ul {
@@ -70,81 +60,42 @@
     color: var(--vtDarkBlue);
     font-family: var(--vtPrimaryFont);
     font-weight: 700;
-  }
-
-  .ul-1 {
-    grid-column: 2;
-  }
-
-  .ul-1,
-  .ul-2 {
-    list-style: none;
     padding: 0;
     margin: 0;
+    align-items: center;
+    justify-content: center;
   }
 
-  .ul-1 li,
-  .ul-2 li {
-    margin-right: 20px;
+  li {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   .visual-thinking-logo {
-    grid-column: 3 / span 1;
-    justify-self: center;
     max-width: 100px;
     height: auto;
   }
 
-  .yellow-wrapped {
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 1%;
-    justify-content: center;
-    margin-right: -13em;
-    margin-top: -3em;
-  }
+ /* .yellowIcons {
+    max-width: 10em;
+    margin-right: -13.5em;
+    margin-top: -2em;
+ } */
 
-  .yellow,
-  .yellow2,
-  .yellow3,
-  .yellow4 {
-    width: 80px;
-    height: 70px;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    transform: rotate(90deg);
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    margin-top: -14%;
-  }
+ @media (width<880px) {
+  /* .yellowIcons {
+     display: none;
+ } */
 
-  .yellow {
-    background: var(--vtYellow);
+ li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
-
-  .yellow2 {
-    background: rgb(255, 213, 97);
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    margin-top: -7%;
+  
+  ul {
+    margin-left: 3em;
   }
-
-  .yellow3 {
-    background: rgb(255, 213, 97);
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    margin-top: -7%;
-  }
-
-  .yellow4 {
-    background: var(--vtYellow);
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    margin-top: -7%;
-  }
+}
 
   @media (width>580px) {
     input {
@@ -167,10 +118,8 @@
     }
   }
 
+
   @media (width<580px) {
-    /* nav {
-      display: none;
-    } */
 
     *,
     *:before,
@@ -185,10 +134,10 @@
       background-color: rgb(255, 255, 255);
     }
 
-    .yellow-wrapped {
-      display: none;
-    }
-
+    /* .yellowIcons {
+     display: none;
+    } */
+/* 
     label .menu {
       position: fixed;
       right: -100px;
@@ -288,6 +237,6 @@
       display: block;
       color: #000000;
       text-decoration: none;
-    }
+    } */
   }
 </style>
