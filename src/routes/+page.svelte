@@ -4,8 +4,10 @@
     import Header from "$lib/molecules/header.svelte";
     import Footer from "$lib/molecules/footer.svelte";
     import Homepage from "$lib/organisms/homepage.svelte";
+    
+    export const prerender = true;
 
-    let loading = true;
+    let loading = false;
 
     function handleKeyDown(event) {
         if (event.key === "L" || event.key === "l") {
