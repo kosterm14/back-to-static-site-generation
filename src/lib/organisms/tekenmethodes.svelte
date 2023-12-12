@@ -104,10 +104,6 @@
     
     
     
-    
-    
-    
-    
       <main class="tekenmethodes-main">
         <article class="methods">
           {#if data && data.methods && data.methods.length > 0}
