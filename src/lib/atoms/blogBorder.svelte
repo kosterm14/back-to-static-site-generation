@@ -1,8 +1,13 @@
+<script>
+  import BlogButton from "./blogButton.svelte";
+</script>
+
 <section>
   <!-- CARDS - BORDER -->
   <article></article>
   <article></article>
   <article></article>
+
   <!-- CARDS - BORDER -->
   <article></article>
   <article></article>
