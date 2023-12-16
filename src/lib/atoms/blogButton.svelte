@@ -12,8 +12,6 @@
 
 <style>
   section {
-    display: flex;
-    justify-content: space-around;
     padding: 1em;
   }
 

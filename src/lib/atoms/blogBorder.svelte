@@ -28,7 +28,7 @@
 
   article {
     height: 60vh;
-    width: 23vw;
+    width: 21vw;
     border: 4px solid var(--vtDarkBlue);
     border-radius: 0.5em;
   }
@@ -43,8 +43,8 @@
     }
 
     article {
-      width: 39vw;
-      height: 65vh;
+      width: 11em;
+      height: 17em;
     }
   }
 
