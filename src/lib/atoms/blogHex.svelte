@@ -84,6 +84,14 @@
   }
   /* tablet */
   @media (min-width: 31em) and (max-width: 55em) {
+    .h3-yellow2-1,
+    .h3-yellow2-2 {
+      margin-top: -0.7em;
+    }
+
+    .grid-container2 {
+      bottom: 0em;
+    }
   }
 
   /* mobile */
