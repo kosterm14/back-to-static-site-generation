@@ -10,6 +10,6 @@
 <Header />
 <!-- <BlogText /> -->
 <BlogBorder />
-<BlogButton />
+<!-- <BlogButton /> -->
 <BlogHex />
 <Footer />
