@@ -2,6 +2,12 @@
   export let data;
 </script>
 
+<header>
+  <section>
+    <h4 class="line">Kennisclips</h4>
+  </section>
+</header>
+
 <!-- {#each data.categories as category}
   {category.title}
   <p>{@html category.content.html}</p>
@@ -26,13 +32,6 @@
           <button onclick="myFunction()">Next</button>
         </button>
       </aside>
-
-      <!-- <section class="yellow-wrapped">
-      <section class="yellow" />
-      <section class="yellow2" />
-      <section class="yellow3" />
-      <section class="yellow4" />
-    </section> -->
     </article>
   {/each}
 </main>
@@ -131,11 +130,11 @@
     font-family: var(--vtPrimaryFont);
     font-size: 1em;
   }
+
   /* Arrow buttons */
 
   button {
     display: inline-block;
-    /* padding: 10px 10px; */
     font-size: 10px;
     text-align: center;
     text-decoration: none;
@@ -148,7 +147,7 @@
 
   /* Hexagon */
 
-  .yellow-wrapped {
+  /* .yellow-wrapped {
     display: grid;
     grid-template-columns: auto;
     margin-top: 1%;
@@ -196,5 +195,19 @@
     grid-column-end: 5;
     grid-row-start: 3;
     margin-top: -7%;
+  } */
+
+  .line {
+    text-transform: uppercase;
+    background-color: var(--vtLightBlue);
+    color: var(--vtWhite);
+    font-family: var(--vtPrimaryFont);
+    font-size: 0.9rem;
+    padding-left: 7rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
   }
 </style>
