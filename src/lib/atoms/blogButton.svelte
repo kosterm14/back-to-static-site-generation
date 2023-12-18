@@ -1,28 +1,34 @@
 <section>
-  <button>Lees meer</button>
-  <button>Lees meer</button>
-  <button>Lees meer</button>
-</section>
-
-<section>
-  <button>Lees meer</button>
-  <button>Lees meer</button>
-  <button>Lees meer</button>
+  <ul>
+    <li><a href="/#">Lees meer</a></li>
+  </ul>
 </section>
 
 <style>
-  section {
-    padding: 1em;
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
 
-  button {
+  li {
     background-color: var(--vtYellow);
-    color: var(--vtDarkBlue);
-    font-family: var(--vtPrimaryFont);
-    font-weight: bold;
     border-radius: 0.5em;
-    border: none;
-    padding: 1em;
+    list-style: none;
+    margin: 1em;
+    padding: 0.6em;
+  }
+
+  li:hover {
+    background-color: var(--vtRed);
+  }
+
+  a {
+    font-family: var(--vtPrimaryFont);
+    color: var(--vtDarkBlue);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
   }
 
   /* tablet */
