@@ -1,3 +1,9 @@
+<header>
+    <section>
+        <h4 class="line">Over</h4>
+    </section>
+</header>
+
 <main>
     <h1>Over het platform</h1>
 
@@ -133,5 +139,20 @@
         font-family: var(--vtSecondaryFont);
         line-height: 1.5rem;
         color: var(--vtDarkBlue);
+    }
+
+    .line {
+        text-transform: uppercase;
+        background-color: var(--vtSec-DarkBlue);
+        color: var(--vtWhite);
+        font-family: var(--vtPrimaryFont);
+        font-size: 0.9rem;
+        padding-left: 7rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        margin-top: 0%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
     }
 </style>
