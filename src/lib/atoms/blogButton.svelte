@@ -1,41 +1,41 @@
 <section>
-  <ul>
-    <li><a href="/#">Lees meer</a></li>
-  </ul>
+  <button><a href="/#">Lees meer</a></button>
 </section>
 
 <style>
-  ul {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  li {
-    background-color: var(--vtYellow);
+  button {
+    background-color: var(--vtDarkBlue);
     border-radius: 0.5em;
     list-style: none;
+    border: none;
     margin: 1em;
     padding: 0.6em;
+    margin-top: 29em;
   }
 
-  li:hover {
+  button:hover {
     background-color: var(--vtRed);
   }
 
   a {
     font-family: var(--vtPrimaryFont);
-    color: var(--vtDarkBlue);
+    color: var(--vtWhite);
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
   }
 
   /* tablet */
-  @media (min-width: 31em) and (max-width: 55em) {
+  @media (max-width: 55em) {
+    button {
+      margin-top: 22em;
+    }
   }
 
-  /* mobile */
-  @media (max-width: 31em) {
+  /* Mobile */
+  @media (max-width: 40em) {
+    button {
+      margin-top: 27em;
+    }
   }
 </style>
