@@ -1,8 +1,10 @@
 <script>
   import BlogButton from "./blogButton.svelte";
+  import BlogText from "./blogText.svelte";
 </script>
 
 <section>
+  <BlogText />
   <!-- CARDS - BORDER -->
   <article>
     <BlogButton />
@@ -15,9 +17,15 @@
   </article>
 
   <!-- CARDS - BORDER -->
-  <article></article>
-  <article></article>
-  <article></article>
+  <article>
+    <BlogButton />
+  </article>
+  <article>
+    <BlogButton />
+  </article>
+  <article>
+    <BlogButton />
+  </article>
 </section>
 
 <style>
@@ -33,9 +41,9 @@
   }
 
   article {
-    height: 60vh;
+    height: 22em;
     width: 21vw;
-    border: 4px solid var(--vtDarkBlue);
+    border: 4px solid var(--vtYellow);
     border-radius: 0.5em;
   }
 
@@ -64,7 +72,7 @@
     }
 
     article {
-      height: 60vh;
+      height: 22em;
       width: 50vw;
     }
   }
