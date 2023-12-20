@@ -119,6 +119,11 @@
     margin-left: 12em;
   }
 
+  h2{
+    font-family: var(--vtPrimaryFont);
+    color: var(--vtDarkBlue);
+  }
+
   .textsection{
     padding: 4em;
   }
@@ -126,7 +131,7 @@
   i{
     color: var(--vtDarkBlue);
     font-weight: bold;
-    font-family: var(--vtSecondaryFont);
+    font-family: var(--vtPrimaryFont);
     line-height: 1.5em;
     font-size: larger;
   }
@@ -135,4 +140,6 @@
     font-family: var(--vtSecondaryFont);
     line-height: 1.5em;
   }
+
+
 </style>
