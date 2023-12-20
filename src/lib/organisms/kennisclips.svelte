@@ -8,16 +8,15 @@
   </section>
 </header>
 
-<!-- {#each data.categories as category}
-  {category.title}
-  <p>{@html category.content.html}</p>
-  {category.knowledgeClip.url}
-{/each} -->
 
 <main>
+  
+
   {#each data.categories as category}
     <article class="category">
-      <h2>{category.title}</h2>
+
+        <a href={category.knowledgeClip.url}>{category.knowledgeClip.url}</a>
+      <h1>{category.title}</h1>
       <p>{@html category.content.html}</p>
 
       <aside>
@@ -25,8 +24,8 @@
           <button onclick="myFunction()">Previous</button>
         </button>
 
-        <a href={category.knowledgeClip.url}>{category.knowledgeClip.url}</a>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yr-rRMElLFg" frameborder="0" allowfullscreen></iframe> -->
+        <!-- <a href={category.knowledgeClip.url}>{category.knowledgeClip.url}</a> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yr-rRMElLFg" frameborder="0" allowfullscreen></iframe>
 
         <button>
           <button onclick="myFunction()">Next</button>
@@ -81,6 +80,9 @@
     font-size: 3.157rem;
     font-family: var(--vtPrimaryFont);
     color: var(--vtDarkBlue);
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    line-height: 1.5rem;
   }
 
   h2 {
@@ -117,6 +119,13 @@
     font-size: 1.2rem;
     font-family: var(--vtSecondaryFont);
     line-height: 1.5rem;
+  }
+
+  /* Header styling */
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Kennisclip teksten */
@@ -208,6 +217,6 @@
     padding-bottom: 0.2rem;
     margin-top: 0%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
   }
 </style>
