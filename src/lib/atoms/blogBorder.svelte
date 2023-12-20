@@ -90,7 +90,7 @@
 
   article {
     height: 35em;
-    width: 21vw;
+    width: 23vw;
     border: 4px solid var(--vtYellow);
     border-radius: 0.5em;
   }
@@ -112,7 +112,7 @@
   }
 
   img{
-    width: 21vw;
+    width: 23vw;
     border-top-right-radius: 1em;
     border-top-left-radius: 1em;
   }
