@@ -76,6 +76,11 @@
 			grid-row-start: 5;
 
 			margin-left: 25%;
+			/* scale: 0.75; */
 		}
+
+		.h3-red {
+            margin-left: 50%;
+        }
 	}
 </style>

@@ -77,6 +77,11 @@
 
     /* mobile */
     @media (max-width: 31em) {
+        /* .blue {
+            width: 240px;
+            height: 220px;
+        } */
+
         .blue,
         .h3-blue {
             grid-column-start: 1;
@@ -84,6 +89,11 @@
             grid-row-start: 3;
 
             margin-left: 25%;
+            /* scale: 0.75; */
+        }
+
+        .h3-blue {
+            margin-left: 50%;
         }
     }
 </style>

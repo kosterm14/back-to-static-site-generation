@@ -1,5 +1,4 @@
 <script>
-
     import { onMount } from "svelte";
     onMount(() => {
         const canvas = document.getElementById("drawing-board");
@@ -31,28 +30,31 @@
                 return;
             }
 
-            const x = e.clientX - canvas.getBoundingClientRect().left;
-            const y = e.clientY - canvas.getBoundingClientRect().top;
+            const x = (e.clientX || e.touches[0].clientX) - canvas.getBoundingClientRect().left;
+            const y = (e.clientY || e.touches[0].clientY) - canvas.getBoundingClientRect().top;
 
             ctx.lineWidth = lineWidth;
             ctx.lineCap = "round";
             ctx.lineTo(x, y);
             ctx.stroke();
         };
-        canvas.addEventListener("mousedown", (e) => {
+        const start = (e) => {
             isPainting = true;
-            startX = e.clientX;
-            startY = e.clientY;
-        });
-        canvas.addEventListener("mouseup", (e) => {
+            startX = e.clientX || e.touches[0].clientX;
+            startY = e.clientY || e.touches[0].clientY;
+        };
+        const end = (e) => {
             isPainting = false;
             ctx.stroke();
             ctx.beginPath();
-        });
+        };
+        canvas.addEventListener("mousedown", start);
+        canvas.addEventListener("touchstart", start);
+        canvas.addEventListener("mouseup", end);
+        canvas.addEventListener("touchend", end);
         canvas.addEventListener("mousemove", draw);
+        canvas.addEventListener("touchmove", draw);
     });
-
-    console.log();
 </script>
 
 <main>

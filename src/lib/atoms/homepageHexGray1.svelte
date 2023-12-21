@@ -85,6 +85,11 @@
             grid-row-start: 7;
 
             margin-left: 25%;
+            /* scale: 0.75; */
+        }
+
+        .h3-gray1 {
+            margin-left: 50%;
         }
     }
 </style>

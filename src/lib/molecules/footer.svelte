@@ -52,6 +52,7 @@ section {
     gap: 10px; 
     background-color: rgb(240, 240, 240);
     font-family: var(--vtPrimaryFont);
+    width: 100vw;
 }
 
 a {

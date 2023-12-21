@@ -3,24 +3,29 @@
 
 <section>
   <body>
-    <label>
+    <!-- <label>
       <input type="checkbox" />
-      <span class="menu"> <span class="hamburger" /> </span>
+      <span class="menu"> <span class="hamburger" /> </span> -->
 
-      <nav>
-        <ul>
-          <a href="/tekenmethodes"><li>Tekenmethodes</li></a>
-          <a href="/kennisclips"><li>Kennisclips</li></a>
-          <a href="/"><li><img src="assets\vtHBO-v1.0-Logo_1.svg" class="visual-thinking-logo"
-            alt="visual-thinking-logo"></li></a>
-          <a href="/over"><li>Over</li></a>
-          <a href="/artikelen"><li>Artikelen</li></a>
-
-        </ul>
-        <!-- <img src="assets/Group 1.svg" alt="yellowIcons" class="yellowIcons"> -->
-
-      </nav>
-    </label>
+    <nav>
+      <ul>
+        <a href="/tekenmethodes"><li>Tekenmethodes</li></a>
+        <a href="/over"><li>Over</li></a>
+        <a href="/"
+          ><li>
+            <img
+              src="assets\vtHBO-v1.0-Logo_1.svg"
+              class="visual-thinking-logo"
+              alt="visual-thinking-logo"
+            />
+          </li></a
+        >
+        <a href="/kennisclips"><li>Kennisclips</li></a>
+        <a href="/artikelen"><li>Artikelen</li></a>
+      </ul>
+      <!-- <img src="assets/Group 1.svg" alt="yellowIcons" class="yellowIcons"> -->
+    </nav>
+    <!-- </label> -->
   </body>
 </section>
 
@@ -28,7 +33,7 @@
   body {
     margin: 0;
     padding: 0;
-    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 7px 6px -2px rgba(0, 0, 0, 0.1);
   }
 
   a {
@@ -42,16 +47,13 @@
   }
 
   nav {
-    padding: 2em;
-    margin-left: -7em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    /* margin-left: -7em; */
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  img {
-    margin-left: 1em;
-    margin-right: 1em;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100vw;
   }
 
   ul {
@@ -63,12 +65,16 @@
     padding: 0;
     margin: 0;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   li {
-    margin-left: 1em;
-    margin-right: 1em;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+
+    width: 7.7rem;
+    display: flex;
+    justify-content: center;
   }
 
   .visual-thinking-logo {
@@ -76,28 +82,38 @@
     height: auto;
   }
 
- /* .yellowIcons {
+  input {
+    display: none;
+  }
+
+  /* .yellowIcons {
     max-width: 10em;
     margin-right: -13.5em;
     margin-top: -2em;
  } */
 
- @media (width<880px) {
-  /* .yellowIcons {
-     display: none;
- } */
+  /* tablet */
+  @media (min-width: 31em) and (max-width: 55em) {
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
 
- li {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-  
-  ul {
-    margin-left: 3em;
-  }
-}
+    body {
+      font-size: 1em;
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-color: rgb(255, 255, 255);
+    }
 
-  @media (width>580px) {
+    li {
+      width: 6.7rem;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 31em) {
     input {
       display: none;
     }
@@ -108,37 +124,30 @@
 
     a:link {
       text-decoration: none;
-      font-family: var(--vtPrimaryFont), sans-serif; 
+      font-family: var(--vtPrimaryFont), sans-serif;
       font-weight: 700;
     }
 
     nav {
       background-color: rgb(255, 252, 249);
-      padding: 2em;
-    }
-  }
-
-
-  @media (width<580px) {
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: border-box;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      width: 100%;
     }
 
-    body {
-      font-size: 1.2em;
-      line-height: 1.6;
-      overflow-x: hidden;
-      background-color: rgb(255, 255, 255);
+    li {
+      width: 3rem;
     }
 
-    /* .yellowIcons {
-     display: none;
-    } */
-/* 
-    label .menu {
+    li:nth-child(1) {
+      color: aqua;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    /* label .menu {
       position: fixed;
       right: -100px;
       top: -120px;
