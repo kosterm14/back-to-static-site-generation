@@ -5,7 +5,7 @@
 		<h3>
 			<em>Ontdek de <br />visual thinking <br /> methodes</em>
 		</h3>
-		<img src="assets\arrows.svg" alt="" />
+		<img src="/arrows.svg" alt="" />
 	</a>
 </section>
 

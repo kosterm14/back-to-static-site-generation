@@ -1,5 +1,5 @@
 <section class="img-man">
-    <img src="assets\man.svg" alt="" />
+    <img src="/man.svg" alt="" />
 </section>
 
 <style>

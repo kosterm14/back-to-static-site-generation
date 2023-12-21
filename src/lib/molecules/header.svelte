@@ -14,7 +14,7 @@
         <a href="/"
           ><li>
             <img
-              src="assets\vtHBO-v1.0-Logo_1.svg"
+              src="/vtHBO-v1.0-Logo_1.svg"
               class="visual-thinking-logo"
               alt="visual-thinking-logo"
             />
