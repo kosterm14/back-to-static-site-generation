@@ -1,5 +1,5 @@
 <section class="img-pencil">
-    <img src="assets\pencil.svg" alt="" />
+    <img src="/pencil.svg" alt="" />
 </section>
 
 <style>
