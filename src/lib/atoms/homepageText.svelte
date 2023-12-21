@@ -61,11 +61,16 @@
             grid-row-start: 2;
 
             margin-bottom: 10%;
+            margin-top: -2%;
         }
     }
 
     /* mobile */
     @media (max-width: 31em) {
+        h1 {
+            font-size: 3rem;
+        }
+
         .h1 {
             grid-column-start: 1;
             grid-column-end: 5;
@@ -75,6 +80,10 @@
             margin-top: 10%;
         }
 
+        h2 {
+            font-size: 1.2rem;
+        }
+
         .h2 {
             /* display: none; */
             grid-column-start: 1;
@@ -82,6 +91,7 @@
             grid-row-start: 2;
 
             margin-bottom: 10%;
+            margin-top: 4%;
         }
     }
 </style>

@@ -83,7 +83,12 @@
 			grid-column-end: 4;
 			grid-row-start: 6;
 
-			margin-left: -25%;
+			margin-left: -27%;
+			/* scale: 0.75; */
 		}
+
+		.h3-light-blue {
+            margin-left: -54%;
+        }
 	}
 </style>

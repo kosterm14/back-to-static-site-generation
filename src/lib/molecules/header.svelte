@@ -3,21 +3,28 @@
 
 <section>
   <body>
-    <!-- <label> -->
-      <!-- <input type="checkbox" />
+    <!-- <label>
+      <input type="checkbox" />
       <span class="menu"> <span class="hamburger" /> </span> -->
 
-      <nav>
-        <ul>
-          <a href="/tekenmethodes"><li>Tekenmethodes</li></a>
-          <a href="/kennisclips"><li>Kennisclips</li></a>
-          <a href="/"><li><img src="assets\vtHBO-v1.0-Logo_1.svg" class="visual-thinking-logo"
-            alt="visual-thinking-logo"></li></a>
-          <a href="/over"><li>Over</li></a>
-          <a href="/artikelen"><li>Artikelen</li></a>
-          </ul>
-        
-        </nav>
+    <nav>
+      <ul>
+        <a href="/tekenmethodes"><li>Tekenmethodes</li></a>
+        <a href="/over"><li>Over</li></a>
+        <a href="/"
+          ><li>
+            <img
+              src="assets\vtHBO-v1.0-Logo_1.svg"
+              class="visual-thinking-logo"
+              alt="visual-thinking-logo"
+            />
+          </li></a
+        >
+        <a href="/kennisclips"><li>Kennisclips</li></a>
+        <a href="/artikelen"><li>Artikelen</li></a>
+      </ul>
+      <!-- <img src="assets/Group 1.svg" alt="yellowIcons" class="yellowIcons"> -->
+    </nav>
     <!-- </label> -->
   </body>
 </section>
@@ -26,8 +33,7 @@
   body {
     margin: 0;
     padding: 0;
-    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.1);
-    width: 100vw;
+    box-shadow: 0px 7px 6px -2px rgba(0, 0, 0, 0.1);
   }
 
   a {
@@ -41,19 +47,13 @@
   }
 
   nav {
-    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     /* margin-left: -7em; */
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(255, 252, 249);  
+    /* align-items: center; */
+    justify-content: center;
     width: 100vw;
-    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.1);
-  }
-
-  img {
-    margin-left: 1em;
-    margin-right: 1em;
   }
 
   ul {
@@ -65,13 +65,16 @@
     padding: 0;
     margin: 0;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
+    /* justify-content: center; */
   }
 
   li {
-    margin-left: 1em;
-    margin-right: 1em;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+
+    width: 7.7rem;
+    display: flex;
+    justify-content: center;
   }
 
   .visual-thinking-logo {
@@ -79,71 +82,18 @@
     height: auto;
   }
 
-  /* input {
-      display: none;
-    } */
-
-
- @media (width<880px) {
- li {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-  
-  ul {
-    margin-left: 3em;
-    width: 100vw;
+  input {
+    display: none;
   }
 
-  body {
-    width: 100vw;
-  } 
+  /* .yellowIcons {
+    max-width: 10em;
+    margin-right: -13.5em;
+    margin-top: -2em;
+ } */
 
-  /* input {
-      display: none;
-    } */
-
-    nav {
-      background-color: rgb(255, 252, 249);
-      padding: 2em;
-      width: 100vw;
-    }
-}
-
-  @media (width<580px) {
-    /* input {
-      display: none;
-    } */
-
-    /* label {
-            display: none;
-		} */
-
-    a:link {
-      text-decoration: none;
-      font-family: var(--vtPrimaryFont), sans-serif; 
-      font-weight: 700;
-    }
-
-    nav {
-      background-color: rgb(255, 252, 249);
-      padding: 2em;
-      /* width: 100vh; */
-    }
-
-    body {
-    width: 100vh;
-    }
-
-    ul {
-      margin-left: 6em;
-      width: 100vw;
-    }
-  }
-
-
-  @media (width<580px) {
-
+  /* tablet */
+  @media (min-width: 31em) and (max-width: 55em) {
     *,
     *:before,
     *:after {
@@ -151,24 +101,49 @@
     }
 
     body {
-      font-size: 1.2em;
+      font-size: 1em;
       line-height: 1.6;
       overflow-x: hidden;
       background-color: rgb(255, 255, 255);
-      width: 100vh;
+    }
+
+    li {
+      width: 6.7rem;
+    }
+  }
+
+  /* mobile */
+  @media (max-width: 31em) {
+    input {
+      display: none;
+    }
+
+    /* label {
+            display: none;
+		} */
+
+    a:link {
+      text-decoration: none;
+      font-family: var(--vtPrimaryFont), sans-serif;
+      font-weight: 700;
     }
 
     nav {
       background-color: rgb(255, 252, 249);
-      padding: 2em;
-      /* width: 100vw; */
+      padding-top: 2em;
+      padding-bottom: 2em;
+      width: 100%;
     }
 
-    /* .yellowIcons {
-     display: none;
-    } */
-/* 
-    label .menu {
+    li {
+      width: 3rem;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    /* label .menu {
       position: fixed;
       right: -100px;
       top: -120px;

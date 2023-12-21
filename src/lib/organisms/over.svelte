@@ -50,15 +50,15 @@
     </section>
 </main>
 
-<section class="yellow-wrapped">
+<!-- <section class="yellow-wrapped">
     <section class="yellow" />
     <section class="yellow2" />
     <section class="yellow3" />
     <section class="yellow4" />
-</section>
+</section> -->
 
 <style>
-    .yellow-wrapped {
+    /* .yellow-wrapped {
         display: grid;
         grid-template-columns: auto;
         margin-top: 1%;
@@ -99,7 +99,6 @@
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: 2;
-        /* margin-top: -7%; */
     }
 
     .yellow3 {
@@ -116,7 +115,7 @@
         grid-column-end: 5;
         grid-row-start: 3;
         margin-top: -7%;
-    }
+    } */
 
     main {
         display: flex;
@@ -156,7 +155,7 @@
         color: var(--vtWhite);
         font-family: var(--vtPrimaryFont);
         font-size: 0.9rem;
-        padding-left: 7rem;
+        padding-left: 22.5%;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
         margin-top: 0%;
@@ -171,5 +170,22 @@
         color: var(--vtDarkBlue);
     }
 >>>>>>> Stashed changes
+    }
+
+    /* tablet */
+    @media (min-width: 31em) and (max-width: 55em) {
+        section {
+            width: 80%;
+        }
+    }
+
+    /* mobile */
+    @media (max-width: 31em) {
+        h1 {
+            font-size: 2rem;
+        }
+        section {
+            width: 90%;
+        }
     }
 </style>
