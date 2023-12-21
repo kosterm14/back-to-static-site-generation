@@ -60,7 +60,8 @@ import { onMount } from "svelte";
 </script>
 
 <main>
-    <div class="labeltekst"><h1>Teken hier!</h1></div>
+    <!-- <img src="/assets/highlighter_7931172.png" width="32" height="32"> -->
+    <div class="labeltekst"><h2>Teken hier!</h2></div>
     <section class="container">
         <div id="toolbar">
             <h3>Kleurenpalet</h3>
@@ -153,6 +154,10 @@ import { onMount } from "svelte";
         padding: 0;
     }
 
+    h2 {
+        font-size: 2.369rem;
+    }
+
     .inputComponent {
         position: absolute;
         margin-left: 0em;
@@ -162,6 +167,7 @@ import { onMount } from "svelte";
     .labeltekst {
         font-family: var(--vtPrimaryFont);
         margin: auto 0;
+        margin-top: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -182,10 +188,12 @@ import { onMount } from "svelte";
         background-color: var(--vtGrey-10);
         box-shadow: var(--vtGrey-80) 1px 1px 20px 1px;
         margin: 2em;
-        /* width: 100vw; */
-        cursor: url('cursor-img.jpg');
+        cursor: pointer;
     }
-
+    
+    .container:hover {
+        cursor: url('/assets/highlighter_7931172.png'), auto;
+    }
     
 #toolbar {
         font-weight: 800;

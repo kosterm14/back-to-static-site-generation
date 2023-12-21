@@ -155,6 +155,7 @@
         width: 100vw;
         display: flex;
         align-items: center;
+
     }
 
     /* tablet */

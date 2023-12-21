@@ -64,7 +64,7 @@
   <ul>
     <li aria-label="heen en weer">
       <div class:heen class:weer>
-        <h3>Kleurenpalet</h3>
+        <h5>Kleurenpalet</h5>
         <br />
         <label for="stroke">Kleur</label>
         <input id="stroke" name="stroke" type="color" />
@@ -92,6 +92,20 @@
   *::after {
     box-sizing: border-box;
   }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input {
+    width: 40%;
+    border-style: none;
+  }
+
 
   li {
     display: grid;

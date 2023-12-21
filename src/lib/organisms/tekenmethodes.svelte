@@ -292,12 +292,7 @@
 
     /* Visual Thinking: Secondary colors,
     =======
-            --vtGrey-80: #c0beb9;
-            --vtGrey-50: #e0dedc;
-            --vtGrey-10: #f9f8f8;
-    
-            /* Visual Thinking: Secondary colors,
-    
+   
         Zie kleuren styleguide of eventueel Figma designs voor gebruik! 
         Word gebruikt als steunkleuren bv: kleurcoderen van categorieën
         */
