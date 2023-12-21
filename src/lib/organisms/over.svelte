@@ -148,7 +148,7 @@
         color: var(--vtWhite);
         font-family: var(--vtPrimaryFont);
         font-size: 0.9rem;
-        padding-left: 22.5%;
+        padding-left: 18.5%;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
         margin-top: 0%;
