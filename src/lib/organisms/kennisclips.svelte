@@ -15,7 +15,7 @@
     <button >
     <img
     class="left-arrow"
-    src="assets/arrows_black.svg"
+    src="./arrows_black.svg"
     alt="Knop met pijl naar volgende video"
     />
     </button>
@@ -26,7 +26,7 @@
     <button>
      <img
     class="right-arrow"
-    src="assets/arrows_black.svg"
+    src="./arrows_black.svg"
     alt="Knop met pijl naar volgende video"
     />
 
