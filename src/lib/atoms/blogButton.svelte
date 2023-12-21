@@ -1,5 +1,5 @@
 <section>
-  <button><a href="/#">Lees meer</a></button>
+  <button><a href="/artikelen/tekenenspelen">Lees meer</a></button>
 </section>
 
 <style>
@@ -10,7 +10,8 @@
     border: none;
     margin: 1em;
     padding: 0.6em;
-    margin-top: 29em;
+    margin-top: -1em;
+    position: absolute;
   }
 
   button:hover {
@@ -35,7 +36,7 @@
   /* Mobile */
   @media (max-width: 40em) {
     button {
-      margin-top: 27em;
+      margin-top: -1em;
     }
   }
 </style>

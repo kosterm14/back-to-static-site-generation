@@ -1,5 +1,7 @@
 <script>
-    import { onMount } from "svelte";
+import Inputtekenruimte from "$lib/atoms/inputtekenruimte.svelte";
+import { onMount } from "svelte";
+  
     onMount(() => {
         const canvas = document.getElementById("drawing-board");
         const toolbar = document.getElementById("toolbar");
@@ -71,53 +73,144 @@
         <div class="drawing-board">
             <canvas id="drawing-board" />
         </div>
+    <div class="inputComponent"><Inputtekenruimte /></div> 
+        
     </section>
 </main>
 
 
 <style>
+
+
+:root {
+		font-size: 20px;
+
+		/* Visual Thinking: Primary Colors:
+    Zie kleuren styleguide of eventueel Figma designs voor gebruik! 
+    */
+		--vtDarkBlue: #090940;
+		--vtLightBlue: #67c5d1;
+		--vtYellow: #feb51e;
+		--vtRed: #f96c4f;
+		--vtWhite: #ffffff;
+
+		/* Visual Thinking: Primary Colors Lichtere versies, ongeveer 80%, 50%, 30% en 10% opacity van de originele kleuren ^
+    Zie kleuren styleguide of eventueel Figma designs voor gebruik! 
+    */
+		--vtDarkBlue-80: #3a3a66;
+		--vtDarkBlue-50: #6b6b8c;
+		--vtDarkBlue-30: #9d9db3;
+		--vtDarkBlue-10: #ceced9;
+
+		--vtLightBlue-80: #85d1da;
+		--vtLightBlue-50: #a4dce3;
+		--vtLightBlue-30: #c2e8ed;
+		--vtLightBlue-10: #e1f3f6;
+
+		--vtYellow-80: #fec44b;
+		--vtYellow-50: #fed378;
+		--vtYellow-30: #ffe1a5;
+		--vtYellow-10: #fff0d2;
+
+		--vtRed-80: #fa8972;
+		--vtRed-50: #fba795;
+		--vtRed-30: #fdc4b9;
+		--vtRed-10: #fee2dc;
+
+		/* Visual Thinking: Grijstinten:
+    Zie kleuren styleguide of eventueel Figma designs voor gebruik!
+     Word vaak gebruikt voor backgrounds en borders. 
+    */
+
+		--vtGrey-80: #c0beb9;
+		--vtGrey-50: #e0dedc;
+		--vtGrey-10: #f9f8f8;
+
+		/* Visual Thinking: Secondary colors,
+    Zie kleuren styleguide of eventueel Figma designs voor gebruik! 
+    Word gebruikt als steunkleuren bv: kleurcoderen van categorieën
+    */
+
+		--vtSec-Red: #af1301;
+		--vtSec-Red-30: #fbc5b4;
+		--vtSec-Green: #169861;
+		--vtSec-Green-30: #63c09f;
+		--vtSec-LightBlue: #4fbbc2;
+		--vtSec-DarkBlue: #31439c;
+		/* <--- deze kleur is de blauwe balk van de tekenmethodes detailpagina */
+		--vtSec-Brown: #8b3a00;
+		--vtSec-Orange: #fe6f07;
+
+		/* Visual Thinking: Fonts,
+    */
+
+		--vtPrimaryFont: "rigid-square", sans-serif;
+		--vtSecondaryFont: "yrsa", serif;
+	}
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .inputComponent {
+        position: absolute;
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+
     .labeltekst {
         font-family: var(--vtPrimaryFont);
         margin: auto 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* width: 100vw; */
     }
     .container {
-      font-family: var(--vtPrimaryFont);  
-      height: 100%;
-      display: flex;
+      /* display: flex;  */
+      font-family: var(--vtPrimaryFont);
+      /* align-items: center; */
+      justify-items: center;
+      padding-bottom: 2em;
+      width: 100vw; 
     }
 
     .drawing-board{
         border-radius: 25px;
-        border: 1.5px #090940 solid;
-        margin: 0.5em;
+        border: none;
+        background-color: var(--vtGrey-10);
+        box-shadow: var(--vtGrey-80) 1px 1px 20px 1px;
+        margin: 2em;
+        /* width: 100vw; */
         cursor: url('cursor-img.jpg');
     }
 
-    #toolbar {
+    
+#toolbar {
         font-weight: 800;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0.5em;
+        padding: 1.5em;
         width: 15%;
-        height: 50%;
-        background-color: #feb51e;
+        height: 30%;
+        border: none;
+        background-color: var(--vtGrey-50);
+        box-shadow: var(--vtGrey-50) 1px 1px 20px 1px;
         border-radius: 25px;
         gap: 0.3em;
-        margin: 0.5em;
-    }
+        margin: 3em;
+    } 
 
-    #toolbar input {
-        width: 50%;
+    input {
+        width: 25%;
         border-radius: 4px;
-        margin: 0;
+        margin: 0em;
     }
 
-    #toolbar input:active{
+    input:active{
         transform: translateY(1px);
         
     }
@@ -126,14 +219,14 @@
         border: none;
         background: none;
         border-radius: 4px;
-        
     }
 
     #lineWidth{
         border: none;
         border-radius: 4px;
     }
-    #toolbar button {
+    
+    #clear {
         background-color: #090940;
         border: none;
         border-radius: 4px;
@@ -141,29 +234,157 @@
         padding: 2px;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
-        width: 50%;
+        width: 25%;
     }
 
-    #toolbar button:hover{
-        color: #feb51e;
+    #clear:hover{
+        color: var(--vtYellow);
 
     }
 
-    #toolbar button:active{
+    #clear:active{
         transform: translateY(1px);
 
     }
 
-    h3{
+    h3 {
         margin: 0.5em;
     }
 
 
-    @media screen and (max-width: 900px) {
-      #toolbar{
-        width: 50%;
-      }
 
+  /* desktop */
+  @media (min-width: 55em) {
+    .container {
+        display: flex;
+        width: 100vw;
+        margin-top: 3em;
+    }
+
+      #toolbar {
+        display: none;
+        position: absolute;
+        max-width: 8em;
+        max-height: 20em;
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+
+      .drawing-board{
+        border-radius: 25px;
+        border: none;
+        background-color: var(--vtGrey-10);
+        box-shadow: var(--vtGrey-50) 1px 1px 20px 1px;
+        margin: 2em;
+        /* max-width: 30em; */
+        height: 25em;
+        width: 100vw;
+        cursor: url('cursor-img.jpg');
+    }
+
+    #toolbar input {
+        width: 50%;
+        height: 3em;
+        border-radius: 4px;
+        margin: 0em;
+    }
+  }
+
+     /* tablet */
+     @media (min-width: 31em) and (max-width: 55em) {
+        .inputComponent {
+            display: none;
+        }
+
+        .labeltekst {
+        font-family: var(--vtPrimaryFont);
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        margin-top: 3em;
+    }
+
+      #toolbar {
+        width: 50%;
+        height: 70%;
+    }
+
+      .drawing-board{
+        border-radius: 25px;
+        border: none;
+        background-color: var(--vtGrey-10);
+        box-shadow: var(--vtGrey-50) 1px 1px 20px 1px;
+        margin: 2em;
+        max-width: 30em;
+        height: 35em;
+        width: 100vw;
+        cursor: url('cursor-img.jpg');
+    }
+
+    #toolbar input {
+        width: 50%;
+        height: 3em;
+        border-radius: 4px;
+        margin: 0em;
+    }
+    }
+
+
+    /* mobile */
+    @media (max-width: 31em) {
+
+        .inputComponent {
+            display: none;
+        }
+
+      .labeltekst {
+        font-family: var(--vtPrimaryFont);
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-left: 5em;
+    }
+
+      .container {
+        width: 100vw;
+        margin-top: 3em;
+    }
+
+      #toolbar {
+        /* margin-left: 5em; */
+        width: 15em;
+        height: 15em;
+    }
+
+      .drawing-board{
+        border-radius: 25px;
+        border: none;
+        background-color: var(--vtGrey-10);
+        box-shadow: var(--vtGrey-50) 1px 1px 20px 1px;
+        margin: 2em;
+        height: 30em;
+        width: 20em;
+        /* padding: 2em; */
+        /* padding-right: -2em; */
+        cursor: url('cursor-img.jpg');
+    }
+
+    #toolbar input {
+        width: 50%;
+        height: 3em;
+        border-radius: 4px;
+        margin: 0em;
+    }
     }
 
 
