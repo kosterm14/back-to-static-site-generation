@@ -5,7 +5,7 @@
         <h3>
             <em>Artikelen</em>
         </h3>
-        <img src="assets\arrows_black.svg" alt="" />
+        <img src="/arrows_black.svg" alt="" />
     </a>
 </section>
 
@@ -85,6 +85,11 @@
             grid-row-start: 7;
 
             margin-left: 25%;
+            /* scale: 0.75; */
+        }
+
+        .h3-gray1 {
+            margin-left: 50%;
         }
     }
 </style>

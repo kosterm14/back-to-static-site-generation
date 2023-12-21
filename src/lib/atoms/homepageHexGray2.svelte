@@ -5,7 +5,7 @@
         <h3>
             <em>Tekenruimte</em>
         </h3>
-        <img src="assets\arrows_black.svg" alt="">
+        <img src="/arrows_black.svg" alt="">
     </a>
 </section>
 
@@ -84,7 +84,12 @@
             grid-column-end: 3;
             grid-row-start: 8;
 
-            margin-left: -25%;
+            margin-left: -27%;
+            /* scale: 0.75; */
+        }
+
+        .h3-gray2 {
+            margin-left: -54%;
         }
     }
 </style>

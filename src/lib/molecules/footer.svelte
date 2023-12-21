@@ -7,7 +7,7 @@
 
   <nav class="footer">
 
-  <a href="/"><img src="assets\visual-thinking-logo-footer.svg" class="logo-footer" alt="footer-logo"></a>
+  <a href="/"><img src="/visual-thinking-logo-footer.svg" class="logo-footer" alt="footer-logo"></a>
 
   <ul class="footer-menu">
     <h4>
@@ -20,9 +20,9 @@
 
   <ul class="social-media">
   <h4>Contact</h4>
-  <img src="assets\social-media-icons\instagram.svg" alt="instagram">
-  <a href="https://www.youtube.com/playlist?list=PLjrep0WCM97y9fznRYBVVKyDkzlT9fWEa"><img src="assets\social-media-icons\youtube.svg" alt="youtube"></a> 
-  <a href="https://www.linkedin.com/in/charleymuhren/"><img src="assets\iconmonstr-linkedin-3.svg" alt="linkedIn"></a>
+  <img src="/instagram.svg" alt="instagram">
+  <a href="https://www.youtube.com/playlist?list=PLjrep0WCM97y9fznRYBVVKyDkzlT9fWEa"><img src="/youtube.svg" alt="youtube"></a> 
+  <a href="https://www.linkedin.com/in/charleymuhren/"><img src="/iconmonstr-linkedin-3.svg" alt="linkedIn"></a>
   <h5>© Charley Muhren, 2022</h5>
   </ul>
 
@@ -41,7 +41,7 @@
 section {
     margin: 0;
     padding: 0;
-    
+    width: 100vw;
 }
 
 .footer {
@@ -52,6 +52,7 @@ section {
     gap: 10px; 
     background-color: rgb(240, 240, 240);
     font-family: var(--vtPrimaryFont);
+    width: 100vw;
 }
 
 a {
@@ -70,8 +71,9 @@ img {
 }
 
 .logo-footer {
-    width: 16em;
-    margin-left: 6em;
+    max-width: 16em;
+    width: 100vw;
+    margin-left: 3em;
 }
 
 .footer-menu {
@@ -84,13 +86,13 @@ img {
     
 }
 
-@media (max-width: 500px) { 
+/* @media (max-width: 500px) { 
 .footer {
  display: flex;
 }
-}
+} */
 
-@media (max-width: 880px) { 
+/* @media (max-width: 880px) { 
 .footer {
     padding-top: 3em;
     display: grid;
@@ -102,17 +104,36 @@ img {
     font-family: var(--vtPrimaryFont);
     margin-left: 0em;
 }
-}
+} */
 
-@media (max-width: 1000px) { 
+@media (max-width: 880px) { 
 .footer {
     padding-top: 3em;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-areas: 
+    'l'
+    'f'
+    's';
 }
+
+.logo-footer {
+    grid-area: l;
+}
+
+.footer-menu {
+    grid-area: f;
+}
+
+.social-media {
+    grid-area: s;
+    
+}
+
 }
 
 </style>

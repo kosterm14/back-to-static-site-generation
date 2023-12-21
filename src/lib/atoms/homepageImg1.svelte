@@ -1,5 +1,5 @@
 <section class="img-man">
-    <img src="assets\man.svg" alt="" />
+    <img src="/man.svg" alt="" />
 </section>
 
 <style>
@@ -61,11 +61,14 @@
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 4;
+
+            position: absolute;
         }
 
         img {
             width: 70%;
-            /* margin-right: 40%; */
+            margin-bottom: -5%;
+            /* scale: 0.75; */
         }
     }
 </style>

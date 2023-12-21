@@ -20,6 +20,26 @@
 </html>
 
 <style>
+	html {
+		width: 100vw;
+	}
+
+	body,
+	html {
+		overflow-x: hidden;
+	}
+
+	/* @media (max-width: 31em) {
+		body,
+		html {
+			overflow-x: visible;
+		}
+
+		html {
+			width: 100%;
+		}
+	} */
+
 	body {
 		margin: 0;
 		padding: 0;
@@ -90,4 +110,10 @@
 		--vtPrimaryFont: "rigid-square", sans-serif;
 		--vtSecondaryFont: "yrsa", serif;
 	}
+
+	blockquote {
+    color: var(--vtSec-Orange);
+    font-family: var(--vtPrimaryFont);
+    margin-top: -1rem;
+  	}
 </style>

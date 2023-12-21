@@ -1,5 +1,5 @@
 <section class="img-pencil">
-    <img src="assets\pencil.svg" alt="" />
+    <img src="/pencil.svg" alt="" />
 </section>
 
 <style>
@@ -61,11 +61,15 @@
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 5;
+
+            position: absolute;
         }
 
         img {
             width: 20%;
             margin-right: 20%;
+            margin-top: -5%;
+            /* scale: 0.75; */
         }   
     }
 </style>

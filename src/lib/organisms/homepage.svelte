@@ -45,8 +45,10 @@
     /* mobile */
     @media (max-width: 31em) {
         .grid-container {
-            margin-top: -7%;
-            justify-content: normal;
+            margin-top: -75%;
+            /* justify-content: normal; */
+            scale: 0.75;
+            margin-bottom: -40%;
         }
     }
 </style>

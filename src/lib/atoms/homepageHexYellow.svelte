@@ -5,7 +5,7 @@
 		<h3>
 			<em>Ontdek de <br />visual thinking <br /> methodes</em>
 		</h3>
-		<img src="assets\arrows.svg" alt="" />
+		<img src="/arrows.svg" alt="" />
 	</a>
 </section>
 
@@ -83,7 +83,12 @@
 			grid-column-end: 3;
 			grid-row-start: 4;
 
-			margin-left: -25%;
+			margin-left: -27%;
+			/* scale: 0.75; */
 		}
+
+		.h3-yellow {
+            margin-left: -54%;
+        }
 	}
 </style>

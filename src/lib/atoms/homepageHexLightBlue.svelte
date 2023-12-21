@@ -6,7 +6,7 @@
 			<em>Kennisclips</em>
 		</h3>
 	</a>
-	<img src="assets\arrows.svg" alt="" />
+	<img src="/arrows.svg" alt="" />
 </section>
 
 <style>
@@ -83,7 +83,12 @@
 			grid-column-end: 4;
 			grid-row-start: 6;
 
-			margin-left: -25%;
+			margin-left: -27%;
+			/* scale: 0.75; */
 		}
+
+		.h3-light-blue {
+            margin-left: -54%;
+        }
 	}
 </style>
