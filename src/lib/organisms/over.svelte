@@ -1,15 +1,9 @@
-<<<<<<< Updated upstream
 <header>
     <section>
         <h4 class="line">Over</h4>
     </section>
 </header>
 
-=======
-<script>
-  
-</script>
->>>>>>> Stashed changes
 <main>
     <h1>Over het platform</h1>
 
@@ -148,7 +142,6 @@
         color: var(--vtDarkBlue);
     }
 
-<<<<<<< Updated upstream
     .line {
         text-transform: uppercase;
         background-color: var(--vtSec-DarkBlue);
@@ -162,14 +155,6 @@
         width: 100vw;
         display: flex;
         align-items: center;
-=======
-    @media (width<880px) {
-        h1 {
-        font-size: 2.157rem;
-        font-family: var(--vtPrimaryFont);
-        color: var(--vtDarkBlue);
-    }
->>>>>>> Stashed changes
     }
 
     /* tablet */
