@@ -1,9 +1,15 @@
+<<<<<<< Updated upstream
 <header>
     <section>
         <h4 class="line">Over</h4>
     </section>
 </header>
 
+=======
+<script>
+  
+</script>
+>>>>>>> Stashed changes
 <main>
     <h1>Over het platform</h1>
 
@@ -40,6 +46,7 @@
         <br />
         <em>Visuele identiteit en webdesign:</em> Ramon Boers <br />
         <em>Webdevelopment:</em> t.b.a.
+
     </section>
 </main>
 
@@ -116,6 +123,7 @@
         align-items: center;
         flex-direction: column;
         margin-bottom: 5rem;
+        /* width: 100vw; */
     }
 
     h1 {
@@ -141,6 +149,7 @@
         color: var(--vtDarkBlue);
     }
 
+<<<<<<< Updated upstream
     .line {
         text-transform: uppercase;
         background-color: var(--vtSec-DarkBlue);
@@ -154,5 +163,13 @@
         width: 100vw;
         display: flex;
         align-items: center;
+=======
+    @media (width<880px) {
+        h1 {
+        font-size: 2.157rem;
+        font-family: var(--vtPrimaryFont);
+        color: var(--vtDarkBlue);
+    }
+>>>>>>> Stashed changes
     }
 </style>

@@ -3,9 +3,9 @@
 
 <section>
   <body>
-    <label>
-      <input type="checkbox" />
-      <span class="menu"> <span class="hamburger" /> </span>
+    <!-- <label> -->
+      <!-- <input type="checkbox" />
+      <span class="menu"> <span class="hamburger" /> </span> -->
 
       <nav>
         <ul>
@@ -15,12 +15,10 @@
             alt="visual-thinking-logo"></li></a>
           <a href="/over"><li>Over</li></a>
           <a href="/artikelen"><li>Artikelen</li></a>
-
-        </ul>
-        <!-- <img src="assets/Group 1.svg" alt="yellowIcons" class="yellowIcons"> -->
-
-      </nav>
-    </label>
+          </ul>
+        
+        </nav>
+    <!-- </label> -->
   </body>
 </section>
 
@@ -29,6 +27,7 @@
     margin: 0;
     padding: 0;
     box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.1);
+    width: 100vw;
   }
 
   a {
@@ -43,10 +42,13 @@
 
   nav {
     padding: 2em;
-    margin-left: -7em;
+    /* margin-left: -7em; */
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: rgb(255, 252, 249);  
+    width: 100vw;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.1);
   }
 
   img {
@@ -64,6 +66,7 @@
     margin: 0;
     align-items: center;
     justify-content: center;
+    width: 100vw;
   }
 
   li {
@@ -76,17 +79,12 @@
     height: auto;
   }
 
- /* .yellowIcons {
-    max-width: 10em;
-    margin-right: -13.5em;
-    margin-top: -2em;
- } */
+  /* input {
+      display: none;
+    } */
+
 
  @media (width<880px) {
-  /* .yellowIcons {
-     display: none;
- } */
-
  li {
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -94,13 +92,28 @@
   
   ul {
     margin-left: 3em;
+    width: 100vw;
   }
+
+  body {
+    width: 100vw;
+  } 
+
+  /* input {
+      display: none;
+    } */
+
+    nav {
+      background-color: rgb(255, 252, 249);
+      padding: 2em;
+      width: 100vw;
+    }
 }
 
-  @media (width>580px) {
-    input {
+  @media (width<580px) {
+    /* input {
       display: none;
-    }
+    } */
 
     /* label {
             display: none;
@@ -115,6 +128,16 @@
     nav {
       background-color: rgb(255, 252, 249);
       padding: 2em;
+      /* width: 100vh; */
+    }
+
+    body {
+    width: 100vh;
+    }
+
+    ul {
+      margin-left: 6em;
+      width: 100vw;
     }
   }
 
@@ -132,6 +155,13 @@
       line-height: 1.6;
       overflow-x: hidden;
       background-color: rgb(255, 255, 255);
+      width: 100vh;
+    }
+
+    nav {
+      background-color: rgb(255, 252, 249);
+      padding: 2em;
+      /* width: 100vw; */
     }
 
     /* .yellowIcons {
