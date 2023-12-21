@@ -139,10 +139,6 @@
       width: 3rem;
     }
 
-    li:nth-child(1) {
-      color: aqua;
-    }
-
     ul {
       flex-direction: column;
     }
