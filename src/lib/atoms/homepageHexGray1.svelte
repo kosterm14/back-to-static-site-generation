@@ -5,7 +5,7 @@
         <h3>
             <em>Artikelen</em>
         </h3>
-        <img src="assets\arrows_black.svg" alt="" />
+        <img src="/arrows_black.svg" alt="" />
     </a>
 </section>
 

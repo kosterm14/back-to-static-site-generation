@@ -6,7 +6,7 @@
 			<em>Kennisclips</em>
 		</h3>
 	</a>
-	<img src="assets\arrows.svg" alt="" />
+	<img src="/arrows.svg" alt="" />
 </section>
 
 <style>

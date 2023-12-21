@@ -119,7 +119,7 @@
                   {:else}
                     <img
                       class={method.categories[0].title.replaceAll(" ", "-")}
-                      src="/assets/placeholder.webp"
+                      src="/placeholder.webp"
                       alt="Placeholder"
                       loading="lazy"
                     />
@@ -133,14 +133,7 @@
           {/if}
         </article>
       </main>
-    
-    
-    
-    
-    
-    
-    
-    
+ 
       <style>
        body {
         margin: 0;

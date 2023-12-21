@@ -4,7 +4,7 @@
 	<h3>
 		<em>Minicursussen</em>
 	</h3>
-	<img src="assets\arrows.svg" alt="" />
+	<img src="/arrows.svg" alt="" />
 </section>
 
 <style>

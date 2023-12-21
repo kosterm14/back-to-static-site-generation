@@ -7,7 +7,7 @@
 
   <nav class="footer">
 
-  <a href="/"><img src="assets\visual-thinking-logo-footer.svg" class="logo-footer" alt="footer-logo"></a>
+  <a href="/"><img src="/visual-thinking-logo-footer.svg" class="logo-footer" alt="footer-logo"></a>
 
   <ul class="footer-menu">
     <h4>
@@ -20,9 +20,9 @@
 
   <ul class="social-media">
   <h4>Contact</h4>
-  <img src="assets\social-media-icons\instagram.svg" alt="instagram">
-  <a href="https://www.youtube.com/playlist?list=PLjrep0WCM97y9fznRYBVVKyDkzlT9fWEa"><img src="assets\social-media-icons\youtube.svg" alt="youtube"></a> 
-  <a href="https://www.linkedin.com/in/charleymuhren/"><img src="assets\iconmonstr-linkedin-3.svg" alt="linkedIn"></a>
+  <img src="/instagram.svg" alt="instagram">
+  <a href="https://www.youtube.com/playlist?list=PLjrep0WCM97y9fznRYBVVKyDkzlT9fWEa"><img src="/youtube.svg" alt="youtube"></a> 
+  <a href="https://www.linkedin.com/in/charleymuhren/"><img src="/iconmonstr-linkedin-3.svg" alt="linkedIn"></a>
   <h5>© Charley Muhren, 2022</h5>
   </ul>
 
